@@ -1,0 +1,93 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #E8E8E8;
+  font-family: sans-serif;
+}
+
+.container{
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.add-note{
+  padding: 50px 0;
+}
+
+.add-note__form{
+  width: 40%;
+  margin: 0 auto;
+  background-color: #fff;
+
+}
+
+.add-note__form-footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+
+.add-note__ta{
+  width: 100%;
+  border: none
+}
+
+.add-note__btn{
+  background-color: #FEBA2C;
+  height: 30px;
+  line-height: 30px;
+  width: 100px;
+  text-align: center;
+  padding: 0;
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+}
+
+
+.notes{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -20px 0;;
+}
+
+.notes__item{
+  width: 28%;
+  margin: 20px;
+  padding: 20px;
+}
+
+
+.colors{
+  display: flex;
+}
+.colors__item{
+  width: 25px;
+  height: 25px;
+  border-radius: 100px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.colors__item--isActive{
+  border: 2px solid #000;
+}
+
+.red{
+  background-color: #FC635D;
+}
+.gold{
+  background-color: #FEC041;
+}
+.green{
+  background-color: #CDFE95;
+}
+.aqua{
+  background-color: aqua;
+}
