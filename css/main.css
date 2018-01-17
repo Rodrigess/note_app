@@ -61,6 +61,7 @@ body{
   width: 28%;
   margin: 20px;
   padding: 20px;
+  position: relative;
 }
 
 
@@ -90,4 +91,10 @@ body{
 }
 .aqua{
   background-color: aqua;
+}
+
+.remove {
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
