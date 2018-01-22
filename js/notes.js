@@ -9,10 +9,17 @@ var Notes = (function(){
 
     return {
 
-        event: function(){
+                event: function(){
             $(window).on('addingNote', function(e, data){
-                $(s.container).append('<div class="'+data.color+' '+s.item+'">'+data.text+' <button class="remove" onclick="this.parentElement.remove()">x</button></div>');
+                index++;
+                $(s.container).append('<div class="'+data.color+' '+s.item+'">'+data.text+' <button class="remove" id="'+index+'">x</button></div>');
+
+                $('#'+index).on('click', function() {
+                    $(this).parent().remove();
+                })
             })
+
+           
         },
 
 
